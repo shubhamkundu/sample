@@ -78,7 +78,6 @@ def get_pie_chart(selected_site):
             values='Launch Site',
             names='class',
             title='Total Success Launches for site ' + selected_site,
-            ylim=(0, 1),
         )
 
     return fig
