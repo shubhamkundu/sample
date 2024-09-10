@@ -101,6 +101,7 @@ def get_scatter_chart(selected_site, selected_payload_mass_range):
     if selected_site != 'ALL':
         scatter_data = scatter_data[scatter_data['Launch Site'] == selected_site]
     fig = px.scatter(scatter_data, x='Payload Mass (kg)', y='class', color='Booster Version Category')
+    fig.update_layout(yaxis_range=[-0.1,1.1])
     return fig
 
 # Run the app
